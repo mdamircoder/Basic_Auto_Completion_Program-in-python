@@ -1,12 +1,12 @@
-a=[]
+dict=[]
 flag = "yes"
 while flag=="yes":
     s = input("Enter the substring :")
     output = ""
-    if len(a)==0:
+    if len(dict)==0:
         print("No Suggestion.")
     else:
-        for w in a:
+        for w in dict:
             if s in w:
                 output += (w+"\n")
         if output=="" :
@@ -18,7 +18,7 @@ while flag=="yes":
     print("Do you want to add your word in dictionary : (yes/no) ?")
     st = input()
     if st=="yes":
-        a.append(s)
+        dict.append(s)
 
     print("Try Again : (yes/no) ?")
     flag = input().strip()
